@@ -5,24 +5,35 @@ The company launched a new onboarding and activation campaign to improve user ac
 The decision to be made is whether the new onboarding experience (Treatment) should be rolled out to all users or not.
 
 This decision impacts:
+
 ->New users entering the product
+
 ->Product and Growth teams
+
 ->Revenue performance of the business
 
 The primary outcome expected is an increase in paid conversion rate.
 
 Before recommending rollout, the company must ensure that:
+
 ->Conversion improves significantly
+
 ->Revenue quality is maintained
+
 ->Refund rates do not increase materially
+
 ->Support burden does not increase excessively
+
 ->User engagement remains healthy
 
 Evidence required:
 
 ->Statistically significant improvement in the primary success metric(paid conversion rate)
+
 ->Positive movement in supporting metrics
+
 ->No major deterioration in guardrail metrics
+
 ->Consistent performance across key user segments
 
 ## Task 2: Define the North Star Metric
@@ -34,36 +45,56 @@ The campaign only creates business value if more users ultimately subscribe.
 
 Other metrics are chosen as supporting metrics due to following reasons-
 Landing Page Visit Rate- Early funnel indicator
+
 Trial Start Rate- Intermediate funnel step
+
 Onboarding Completion Rate- Activation indicator
+
 Engagement Score- Quality signal
+
 Revenue per User- Financial outcome
+
 Days to Convert- Efficiency indicator
 
 These above supporting metrics tell why conversion changed but do not directly represent business success.
 
 Higher paid conversion contributes to business growth in the following ways-
+
 ->More subscribers
+
 ->More recurring revenue
+
 ->Higher lifetime value
 
 Risk of Optimizing Blindly
+
 Paid conversion could increase while:
+
 ->Refunds increase
+
 ->Support burden rises
+
 ->Low-quality customers convert
+
 ->Long-term retention decreases
 
 ## Task 4: Clean and Prepare Experiment Data
 1.missing values found-
+
 device type-18 (filled with Unknown)
+
 traffic source-24 (filled with Unkown)
+
 days_to_convert-1336 (ignored as most users did not convert)
+
 engagement_score-14 (filled with median)
 
 2.Group counts
+
 before removing duplicated-
+
 treatment-715
+
 control-693
 
 3.Found 8 duplicate user ids and duplicates were removed
@@ -72,10 +103,15 @@ control-693
 
 # Outliers in revenue(after removing duplicate values)
 quartile1=404.02
+
 quartile 3=1178.665
+
 IQR=774.645
+
 upper_bound=2340.6325
+
 lower_bound= -757.9475
+
 found 4 outliers but didnot remove it as they represent legitimate customer purchases and are important for measuring business performance.
 Segment distribution across groups
 
@@ -83,32 +119,52 @@ Segment distribution across groups
 distribution across region
 
 Row Labels	Control	Treatment
+
 East	    157	     170
+
 North	    201	     180
+
 South	    184	     183
+
 West	    148	     177
+
 fairly distributed 
 
 ditribution across device type
 Row Labels	Control	Treatment
+
 Desktop	     200	  213
+
 Mobile	     426	  432
+
 Tablet	     55	      56
+
 Unknown	     9	      9
 
 distribution across traffic source
+
 Row Labels	Control	Treatment
-Email	     73	      56	
+
+Email	     73	      56
+
 Organic	246	 237	  483
+
 Paid Search	 155	  176	
+
 Referral	  81	   91	
+
 Social	     129	  132	
+
 Unknown	      6	       18	
 
 distribution across plan type
+
 Row Labels	Control	Treatment
+
 Basic	     221	  232
+
 Free	     360	  366
+
 Premium	     109	  112
 
 # Task 8: Evaluate Guardrail Metrics
