@@ -118,54 +118,54 @@ Segment distribution across groups
 # Segment distribution across groups-after removing duplicates
 distribution across region
 
-Row Labels	Control	Treatment
+Row Labels	|Control	|Treatment
 
-East	    157	     170
+East	    |157	    |170
 
-North	    201	     180
+North	    |201	    |180
 
-South	    184	     183
+South	    |184	    |183
 
-West	    148	     177
+West	    |148	    |177
 
 fairly distributed 
 
 ditribution across device type
-Row Labels	Control	Treatment
+Row Labels	    |Control	    |Treatment
 
-Desktop	     200	  213
+Desktop	        |200	        |213
 
-Mobile	     426	  432
+Mobile	        |426	        |432
 
-Tablet	     55	      56
+Tablet	        |55	            |56
 
-Unknown	     9	      9
+Unknown	        |9	            |9
 
 distribution across traffic source
 
-Row Labels	Control	Treatment
+Row Labels	       |Control	    |Treatment
 
-Email	     73	      56
+Email	           |73	        |56
 
-Organic	246	 237	  483
+Organic	           |246	        |237	  
 
-Paid Search	 155	  176	
+Paid Search	       |155	        |176	
 
-Referral	  81	   91	
+Referral	       |81	        |91	
 
-Social	     129	  132	
+Social	           |129	        |132	
 
-Unknown	      6	       18	
+Unknown	           |6	        |18	
 
 distribution across plan type
 
-Row Labels	Control	Treatment
+Row Labels	   |Control	   |Treatment
 
-Basic	     221	  232
+Basic	       |221	       |232
 
-Free	     360	  366
+Free	       |360	       |366
 
-Premium	     109	  112
+Premium	       |109	       |112
 
 # Task 8: Evaluate Guardrail Metrics
 
